@@ -1,0 +1,69 @@
+const express = require("express");
+const jwt = require("jsonwebtoken");
+const { z } = require("zod");
+const bcrypt = require("bcryptjs")
+const user = require("../models/user")
+
+const app = express();
+
+const userSchema = z.object({
+  email: z.string().email(),
+  username: z.string().min(3),
+  password: z.string().min(6),
+  games: z.array(z.string()).min(1),
+  role: z.string(),
+});
+
+app.post("/signup", async (req, res) => {
+  try {
+    const {email, username, password, games, role} = userSchema.parse(req.body);
+
+    const existingUser = await user.findOne({email});
+    if (existingUser){
+      return res.status(403).json({
+        error: "Already exists"
+      });
+    }
+
+    const hashedPass = await bcrypt.hash(password, 10);
+    const user = new user({email, username, hashedPass, games, role});
+
+    await user.save();
+    res.status().json({
+      msg: "User created successfully",
+    })
+  } catch (error) {
+    res.status(403).json({
+      error: error.message || "Inalid request"
+    })
+  }
+});
+
+app.post("/login", async (req, res) => {
+  const {email, password} = req.body;
+  const user = await user.findOne({email});
+
+  if(!user){
+    return res.status(403).json({
+      msg: "Invalid inputs"
+    })
+  }
+  const passMatch = await bcrypt.compare(password, user.password);
+  if (!passMatch) {
+    return res.status(400).json({
+      error: "Invalid credentials" 
+    })
+  };
+
+
+  const token = "Bearer  " + jwt.sign({
+    userId: user._id
+  }, process.env.JWT_SECRET);
+  res.json({
+    token,
+    userId: user_.id
+  });
+});
+
+model.exports = app;
+
