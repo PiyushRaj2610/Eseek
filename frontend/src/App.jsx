@@ -1,11 +1,14 @@
-import axios from "axios";
-
-axios.defaults.baseURL = "http://localhost:3000/api";
+import React from "react";
+import { Home } from "./pages/Home";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   return (
-    <div>
-      Hi there!
+    <div className="bg-black">
+      
+        <div className="bg">
+        <Home></Home>
+      </div>
     </div>
   );
 }

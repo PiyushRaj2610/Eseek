@@ -33,10 +33,10 @@ const userSchema = new mongoose.Schema({
   experience: {
     type: String
   },
-  teams: { 
+  teams: [{ 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: "team"
-  }
-})
+    ref: "Team"
+  }]
+}, {timestamps: true})
 
-model.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);

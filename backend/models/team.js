@@ -21,18 +21,18 @@ const teamSchema = new mongoose.Schema({
   },
   members: [{
    type: mongoose.Schema.Types.ObjectId,
-   ref: "user" 
+   ref: "User" 
   }],
   createdBy:{ 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: "user", 
+    ref: "User", 
     required: true 
   },
   joinRequests: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: "user"
+    ref: "User"
   }]
 
-})
+}, {timestamps: true})
 
-model.exports = mongoose.model("User", teamSchema);
+module.exports = mongoose.model("Team", teamSchema);
