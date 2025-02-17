@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Join.css"; // Import the CSS file
+import "../styles/Join.css";
 
 export const Button = ({ children }) => {
   return (

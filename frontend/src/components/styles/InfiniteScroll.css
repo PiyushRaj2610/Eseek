@@ -63,7 +63,7 @@
   border: none;
   background: #ffffff;
   color: #050801;
-  box-shadow: 0 0 3px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 150px #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 50px #ffffff;
 }
 
 .wrapper:hover .item {

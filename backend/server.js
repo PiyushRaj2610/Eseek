@@ -16,4 +16,4 @@ app.use(cors());
 app.use("/api/teams", teamRoutes);
 app.use("/api/users", userRoutes);
 
-app.listen(process.env.PORT || 5000, () => console.log("Server running"));
+app.listen(process.env.PORT || 3000, () => console.log("Server running"));

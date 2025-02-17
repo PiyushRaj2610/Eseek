@@ -14,10 +14,10 @@ export const Appbar = () => {
 
     <div className=" h-full w-full flex justify-between mr-10 items-center ">
       <div className="flex items-center pl-112">
-        <Button>Sign In</Button>
+        <Button>Sign Up</Button>
       </div>
       <div className="flex justify-content items-center pr-20">
-        <Button>Join</Button>
+        <Button>Login</Button>
       </div>
             
     </div>
