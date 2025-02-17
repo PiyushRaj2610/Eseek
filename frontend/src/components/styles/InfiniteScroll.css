@@ -14,7 +14,7 @@
 
 .wrapper {
   width: 90%;
-  max-width: 1536px;
+  max-width: 1300px;
   margin-inline: auto;
   position: absolute;
   height: 100px;
@@ -42,7 +42,7 @@
   width: 180px;
   height: 80px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 0.1px solid white;
   border-radius: 2px;
   border-image: linear-gradient(to right, rgb(137, 57, 223), blue) 1;
   position: absolute;
