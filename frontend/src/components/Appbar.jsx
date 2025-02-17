@@ -1,6 +1,5 @@
-import mainLogo from "../assets/mainLogo.png"
 import "../components/styles/Appbar.css";
-import { Button } from "../components/login/Button";
+import { Button } from "./login/Button";
 
 
 export const Appbar = () => {
