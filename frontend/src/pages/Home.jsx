@@ -1,35 +1,32 @@
 import { Appbar } from "../components/Appbar";
+import { HomeBgVideo } from "../components/HomeBgVideo";
 import { InfiniteScroll } from "../components/InfiniteScroll";
 
 export const Home = () => {
-  return <div className="h-screen flex flex-col">
-    <div className="text-white h-22 ">
-    <Appbar/>
-    </div>
-
-    <div>
-      <InfiniteScroll/>
-    </div>
-
-    <div className="text-white h-full w-full flex flex-col pl-10 pt-20">
-
-      <div className="flex flex-col justify-content h-25 text-7xl m-2">
-        The Ultimate Networking Hub for Gamers
+  return (
+    <div className="h-full flex flex-col z-0">
+      <div className=" text-white h-[80px]  z-10 ">
+        <Appbar />
       </div>
 
-      <div className="flex flex-col h-40 w-180 flex-start">
-        The ultimate platform for esports players, enabling seamless searches for players and teams based on official achievements, gameplay clips, roles, and more...    
-      </div>
 
-      <div className="flex flex-col h-20 text-5xl">
-        "Connect. Compete. Conquer!"
-      </div>
-    </div>
-    
 
-    <div className="flex h-20 justify-center items-center text-white text-base">
-      © 2025 Eseek. All rights reserved.
+      <div className="text-white bg-black flex-grow h-[800px] w-[full] flex flex-col z-10">
+        <HomeBgVideo />
+        <a 
+        href="https://github.com/PiyushRaj2610" 
+        target="_blank" 
+        
+        className="flex justify-center items-center bg-black text-2xl tracking-widest 
+        h-[40px] font-extrabold cursor-pointer text-transparent bg-clip-text 
+        bg-gradient-to-r from-[#282929] to-[#282929] hover:from-purple-700 
+        hover:to-blue-400 transition-colors duration-500">
+          D E V E L O P E R  {" - > "} P I Y U S H
+        </a>
       </div>
     
-  </div>
-}
+      
+      
+    </div>
+  );
+};

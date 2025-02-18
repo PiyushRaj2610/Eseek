@@ -7,6 +7,12 @@ export const SignUpDetails = () => {
         <div className="text-white text-4xl font-semibold tracking-wider">
           PERSONAL DETAILS
         </div>
+        
+      </div>
+      <div className="flex justify-center items-center flex-col pt-12 pb-10 border border-b-white">
+        <div className="text-white text-4xl font-semibold tracking-wider">
+          PERSONAL DETAILS
+        </div>
 
         <InputField label="*Gamertag" placeholder="Enter your unique tag" />
         <InputField label="*Email-Id" placeholder="Enter your email-id" />

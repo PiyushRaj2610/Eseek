@@ -14,10 +14,11 @@
 
 .wrapper {
   width: 90%;
+  padding-top: 50px;
   max-width: 1300px;
   margin-inline: auto;
   position: absolute;
-  height: 100px;
+  height: 200px;
   margin-top: 5rem;
   overflow: hidden;
   mask-image: linear-gradient(
