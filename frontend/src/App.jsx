@@ -4,7 +4,8 @@ import { SignUp } from "./pages/SignUp";
 import { Join } from "./pages/Join";
 import { RecoilRoot } from "recoil";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {HomeBgVideo} from "./components/HomeBgVideo.jsx";
+import { Games } from "./pages/Games.jsx";
+import { Profile } from "./pages/Profile.jsx";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/signin" element={<SignUp />} />
               <Route path="/login" element={<Join />} />
+              <Route path="/dashboard/games" element={<Games />} />
+              <Route path="/dashboard/profile" element={<Profile   />} />
             </Routes>
           </BrowserRouter>
         </RecoilRoot>

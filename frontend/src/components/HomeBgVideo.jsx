@@ -3,7 +3,7 @@ import { InfiniteScroll } from "./InfiniteScroll";
 
 export const HomeBgVideo = () => {
   return (
-    <div className="flex w-full h-full overflow-hidden relative z-6">
+    <div className="flex-col w-full h-full overflow-hidden relative z-6">
       <video
         autoPlay
         loop
@@ -34,7 +34,9 @@ export const HomeBgVideo = () => {
         <div className="flex flex-col h-[80px] text-5xl mt-4 mb-100 pt-6 z-0">
           "Connect. Compete. Conquer!"
         </div>
+        
       </div>
+      
         
     </div>
   );

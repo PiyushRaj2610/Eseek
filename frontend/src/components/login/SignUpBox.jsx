@@ -5,7 +5,7 @@ export const InputField = ({ label, placeholder }) => {
         {label}
       </label>
       <input
-        className="border-2 rounded-md border-[#282929] h-10 w-full bg-black text-white placeholder:text-gray-500 p-2 hover:border-white"
+        className="border-2 rounded-md text-2xl border-[#282929] h-10 w-full bg-black text-white placeholder:text-gray-500 p-2 hover:border-white"
         type="text"
         placeholder={placeholder}
       />

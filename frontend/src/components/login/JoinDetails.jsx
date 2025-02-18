@@ -5,7 +5,7 @@ export const JoinDetails = () => {
     <div className="w-full max-w-2xl p-5 space-y-6 my-6">
       <div className="flex justify-center items-center flex-col pt-12 pb-10 ">
         <div className="text-white text-4xl font-semibold tracking-wider">
-          Login Credentials
+          LOGIN CREDENTIALS
         </div>
 
         <InputField label="*username" placeholder="Enter username / email" />

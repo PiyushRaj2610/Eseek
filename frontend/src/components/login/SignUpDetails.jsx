@@ -4,9 +4,19 @@ export const SignUpDetails = () => {
   return (
     <div className="w-full max-w-2xl p-5 space-y-6 my-6">
       <div className="flex justify-center items-center flex-col pt-12 pb-10 border border-b-white">
-        <div className="text-white text-4xl font-semibold tracking-wider">
-          PERSONAL DETAILS
+      <div className="flex justify-center items-center text-white text-4xl font-semibold tracking-wider">
+        <div className="bg-red-300 h-60 w-60 rounded-full overflow-hidden opacity-50 cursor-pointer">
+          <img 
+            src="./src/assets/dum.jpeg" 
+            className="h-full w-full object-cover rounded-full"
+            alt="Profile"
+          />
         </div>
+      </div>
+        <div className="text-white pt-4">
+          ADD PFP
+        </div>
+
         
       </div>
       <div className="flex justify-center items-center flex-col pt-12 pb-10 border border-b-white">
@@ -29,7 +39,7 @@ export const SignUpDetails = () => {
         <InputField label="*Achievements" placeholder="Enter Official/ Unofficial achievements" />
         <InputField label="*Clips" placeholder="Yes / No" />
         <InputField label="*Experience (in years)" placeholder="Enter your experience" />
-        <InputField label="*Team Name (if no - enter NA)" placeholder="Enter the name of your team" />
+        <InputField label="Team Name (if no - enter NA)" placeholder="Enter the name of your team" />
         
       </div>
       <div className="flex justify-center items-center pt-3">
@@ -41,3 +51,4 @@ export const SignUpDetails = () => {
     </div>
   );
 };
+
