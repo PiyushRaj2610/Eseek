@@ -21,27 +21,14 @@ export const Profile = () => {
           <aside className="w-64 border-white border-r-[0.5px] bg-black p-2 text-white">
             <Sidebar />
           </aside>
+          <div className="bg-red-300 h-full w-full">
+            <div className="bg-green-300 w-full h-[180px]">
 
-          <div>
-              <div className="profile-container">
-          {/* Header and Navbar already included elsewhere */}
-          
-          {/* Profile Section */}
-          <div className="profile-header">
-            <div className="profile-pic"></div>
-            <div className="profile-info"></div>
-            <div className="chat-icon">💬</div>
+            </div>
           </div>
-          
-          {/* Red/Pink Bar */}
-          <div className="profile-bar"></div>
-          
-          {/* Main Content Area */}
-          <div className="profile-content"></div>
         </div>
-          </div>
-  
-        </div>
+
+        
       </div>
     );
 }

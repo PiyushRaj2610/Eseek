@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { createTeam } = require("../controllers/teamController");
-const authMiddleware = require("../middleware/authMiddleware");
 
-router.post("/signup", authMiddleware, createTeam);
+router.post("/signup", createTeam);
 
 module.exports = router;

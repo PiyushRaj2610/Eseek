@@ -1,8 +1,12 @@
 import { SignUpDetails } from "../components/login/SignUpDetails";
 import { Heading } from "../components/login/Heading"
+import axios from "axios";
 
 export const SignUp = () => {
+
+
   return (
+
     <div className="bg-black min-h-screen flex flex-col">
   
       <div>
@@ -10,7 +14,7 @@ export const SignUp = () => {
       </div>
 
       <div className="bg-transparent flex h-full w-full justify-center items-center pb-20">
-        <SignUpDetails />
+        <SignUpDetails/>
       </div>
 
       
