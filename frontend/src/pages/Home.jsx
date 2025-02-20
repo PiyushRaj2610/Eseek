@@ -11,7 +11,7 @@ export const Home = () => {
 
 
 
-      <div className="text-white bg-black flex-grow h-[685px] w-[full] flex flex-col z-10">
+      <div className="text-white bg-black flex-grow h-[720px] w-[full] flex flex-col z-10">
         <HomeBgVideo />
         
       </div>
@@ -24,7 +24,7 @@ export const Home = () => {
            font-extrabold cursor-pointer text-transparent bg-clip-text 
           bg-gradient-to-r from-[#282929] to-[#282929] hover:from-purple-700 
           hover:to-blue-400 transition-colors duration-200">
-          D E V E L O P E R  {" - > "} P I Y U S H
+          D E V E L O P E D - B Y - P I Y U S H
         </a>
       </div>
            

@@ -1,4 +1,3 @@
-import { Home } from "../pages/Home";
 import { InfiniteScroll } from "./InfiniteScroll";
 
 export const HomeBgVideo = () => {
