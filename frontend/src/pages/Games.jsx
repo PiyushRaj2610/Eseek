@@ -1,4 +1,4 @@
-import { DashboardNavBar } from "../components/DashboardNavBar";
+import { DashboardNavBar } from "../components/Dashboard/DashboardNavBar";
 
 export const Games = () => {
   return <div>

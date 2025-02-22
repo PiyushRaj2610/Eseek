@@ -1,6 +1,5 @@
-import { Appbar } from "../components/Appbar";
+import { Appbar } from "../components/HomeComponents/Appbar";
 import { HomeBgVideo } from "../components/HomeBgVideo";
-import { InfiniteScroll } from "../components/InfiniteScroll";
 
 export const Home = () => {
   return (

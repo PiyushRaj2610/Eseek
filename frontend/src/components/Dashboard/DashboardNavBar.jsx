@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../components/styles/Appbar.css";
-import {Sidebar} from "./Dashboard/Sidebar";
+import "../../components/styles/Appbar.css";
+import {Sidebar} from "./Sidebar";
 
 export const DashboardNavBar = () => {
   const [selectedGame, setSelectedGame] = useState("Your Games");

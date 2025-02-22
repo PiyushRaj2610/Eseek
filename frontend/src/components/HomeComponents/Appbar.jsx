@@ -1,5 +1,5 @@
-import "../components/styles/Appbar.css";
-import { Button } from "./login/Button";
+import "../../components/styles/Appbar.css";
+import { Button } from "./Button";
 
 
 export const Appbar = () => {

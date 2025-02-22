@@ -1,5 +1,5 @@
-import { SignUpDetails } from "../components/login/SignUpDetails";
-import { Heading } from "../components/login/Heading"
+import { SignUpDetails } from "../components/SignUpPageComponents/SignUpDetails";
+import { Heading } from "../components/LoginPageComponents/Heading"
 import axios from "axios";
 
 export const SignUp = () => {

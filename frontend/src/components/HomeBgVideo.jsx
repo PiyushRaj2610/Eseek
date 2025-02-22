@@ -1,4 +1,4 @@
-import { InfiniteScroll } from "./InfiniteScroll";
+import { InfiniteScroll } from "../components/HomeComponents/InfiniteScroll";
 
 export const HomeBgVideo = () => {
   return (

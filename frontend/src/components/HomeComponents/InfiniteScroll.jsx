@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/InfiniteScroll.css"; 
+import "../styles/InfiniteScroll.css"; 
 
 const names = [
   { name: "BGMI", url: "https://www.battlegroundsmobileindia.com/" }, 

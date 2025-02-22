@@ -1,4 +1,4 @@
-import { InputField } from "./SignUpBox";
+import { InputField } from "../SignUpPageComponents/SignUpBox";
 
 export const JoinDetails = () => {
   return (

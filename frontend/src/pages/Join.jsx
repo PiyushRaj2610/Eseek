@@ -1,5 +1,5 @@
-import { JoinDetails } from "../components/login/JoinDetails";
-import { Heading } from "../components/login/Heading"
+import { JoinDetails } from "../components/LoginPageComponents/JoinDetails";
+import { Heading } from "../components/LoginPageComponents/Heading"
 
 export const Join = () => {
   return (
